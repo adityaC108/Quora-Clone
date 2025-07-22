@@ -3,7 +3,7 @@ import { getAuth,GoogleAuthProvider,FacebookAuthProvider } from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZMvyOV1zJTqhT0AUWSvwk383lmzQKjqQ",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "quora-clone-d7cd8.firebaseapp.com",
   projectId: "quora-clone-d7cd8",
   storageBucket: "quora-clone-d7cd8.firebasestorage.app",
